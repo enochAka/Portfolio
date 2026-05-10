@@ -4,18 +4,22 @@ body {
     font-family: 'DM Sans', sans-serif;
     color: white;
 }
+
 #icon {
     color: #ffffff;
     font-family: "Syne", sans-serif;
     font-weight: 800;
     font-size: 32px;
 }
+
 #icon:hover {
     cursor: pointer;
 }
+
 #full-stop {
     color: #a78bfa;
 }  
+
 nav {
     margin-top: 2px;
     position: sticky;
@@ -26,23 +30,30 @@ nav {
     justify-content: space-between;
     border-bottom: 1px white solid;
     border-top: 1px white solid;
+    background-color: #0a0a0f;
 }
+
 ul {
     display: flex;
 }
+
 li {
     margin-left: 30px;
+    list-style: none;
 }
+
 a {
     text-decoration: none;
     color: #94a3b8;
     font-weight: 300;
     transition: 0.2s;
 }
+
 a:hover {
     color: white;
     
 }
+
 #hire-me {
     background-color: #a78bfa;
     padding: 10px;
@@ -50,6 +61,7 @@ a:hover {
     color: black;
     font-weight: 400;
 }
+
 #hire-me:hover {
     color: white;
     background-color: #f472b6;
