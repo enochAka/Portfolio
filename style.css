@@ -440,9 +440,9 @@ p {
 #contact {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 70.4px - 10%);
-     padding-top: 5%;
-    padding-bottom: 5%; 
+    height: calc(100vh - 300px - 70.4px);
+    padding-top: 150px;
+    padding-bottom: 150px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -549,4 +549,19 @@ footer {
 #right-footer {
     position: absolute;
     right: 0;
+}
+
+@media (max-width: 768px) {
+    nav > ul {
+        display: none;
+    }
+    #hero #about-me #contact #projects{
+        padding: 5px;
+        margin: 0;
+    }
+    
+    #project-boxes {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
 }
