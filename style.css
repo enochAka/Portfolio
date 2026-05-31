@@ -12,7 +12,7 @@ body {
     height: calc(100vh - 70.4);
     margin-left: 150px;
     margin-right: 150px;
-    padding-top: 100px;
+    padding-top: 170.4px;
     padding-bottom: 100px;
     justify-content: space-between;
 }
@@ -22,9 +22,6 @@ body {
     font-family: "Syne", sans-serif;
     font-weight: 800;
     font-size: 20px;
-}
-
-#icon:hover {
     cursor: pointer;
 }
 
@@ -46,7 +43,8 @@ nav {
     z-index: 999;
 }
 
-ul {
+nav > ul {
+    
     display: flex;
 }
 
@@ -196,12 +194,11 @@ a:hover {
     flex-direction: column;
     border-bottom: #ffffff solid 1px;;
     height: calc(100vh - 150px);
-    padding-left: 150px;
-    padding-right: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
     padding-top: 50px;
     padding-bottom: 100px;
     justify-content: space-between;
-    overflow-x: hidden;
     height: fit-content;
 }
 
@@ -220,7 +217,7 @@ a:hover {
     background-color: #94a3b8;
 }
 
-#about-me-heading {
+h2 {
     font-family: "Syne", sans-serif;
     font-weight: 800;
     font-size: 45px;
@@ -268,7 +265,8 @@ p {
     bottom: 0;
     right: 0;
     gap: 6px;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #opportunities-text {
@@ -298,13 +296,17 @@ p {
     font-size: 12px;
     color: #94a3b8;
     margin-left: 10px;
+    margin-top: 7px;
+    transition: 0.5s;
+}
+
+.skill:hover {
+    border: #a78bfa 1px solid;
+    color: #a78bfa;
 }
 
 #list-of-skils {
-    width: 500px;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 500px;    
 }
 
 
@@ -319,8 +321,232 @@ p {
     100% {opacity: 1; transform: translateY(0);}
 }
 
-@keyframes intensified-glow {
-    0% {box-shadow: 0 0 40px 40px rgba(167,139,250, 0.03); background-color: rgba(167,139,250, 0.03);}
-    50% {box-shadow: 0 0 40px 40px rgba(167,139,250, 0.2); background-color: rgba(167,139,250, 0.2);}
-    100% {box-shadow: 0 0 40px 40px rgba(167,139,250, 0.03); background-color: rgba(167,139,250, 0.03);}
+#projects {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #ffffff solid 1px;;
+    height: calc(100vh - 150px);
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#section-projects-start {
+    color: #a78bfa;
+    font-family: "Syne", sans-serif;
+}
+
+#project-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.project-box {
+    width: 375px;
+    border: 1px white solid;
+    border-radius: 20px;
+}
+
+.project-image {
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    border-bottom: white 1px solid;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.languages {
+    display: flex;
+}
+
+.HTML-language {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #cb8850;
+    background-color: #352421;
+    margin: 0;
+}
+
+.CSS-language {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #63c1ce;
+    background-color: #1b303a;
+    margin-left: 10px;
+}
+
+.project-title {
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+}
+
+.project-content {
+    background-color: #17161f;
+    padding-bottom: 50px;
+    justify-content: center;
+    padding: 20px 20px 25px 20px;
+    border-bottom: white 1px solid;
+}
+
+#project-portfolio {
+    background-color: #1b1e36;
+}
+
+#project-to-do-app {
+    background-color: #132112;
+}
+
+#project-clone {
+    background-color: #221122;
+}
+
+.project-footer {
+    font-family: 'Syne', sans-serif;
+    padding: 20px;
+    background-color: #17161f;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.live-demo {
+    color: #a78bfa;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.live-demo:hover {
+    color: #f472b6;
+}
+
+.github {
+    cursor: pointer;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 300px - 70.4px);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: #ffffff solid 1px;
+}
+
+#contact-text {
+    text-align: center;
+}
+
+#section-contact-start {
+    color: #a78bfa;
+}
+
+#contact-heading {
+    text-align: center;
+}
+
+#contact-div {
+    width: 600px;
+    background-color: #171720;
+    border: white 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#email {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #a78bfa;
+    margin-top: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px 10px rgba(167,139,250,0.2);
+    background-color: rgba(167,139,250,0.13);
+}
+
+#links {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-link {
+    width: fit-content;
+    all: unset;
+    cursor: pointer;
+    border-radius: 10px;
+    border: #94a3b8 1px solid;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    color: #94a3b8;
+    height: fit-content;
+    transition: 0.2s;
+}
+
+.contact-link:hover {
+    color: white;
+    border: white 1px solid;
+    .octicon-mark-github{fill: white;}
+    .bi-linkedin{fill: white;}
+    .bi-twitter-x{fill: white;}
+}
+
+.octicon-mark-github {
+    fill: #94a3b8;
+    height: 18.4px;
+    width: auto;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.bi-linkedin {
+    fill: #94a3b8;
+    height: 18.4px;
+    width: auto;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.bi-twitter-x {
+    fill: #94a3b8;
+    height: 18.4px;
+    width: auto;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+footer {
+    position: relative;
+    margin: 0 50px;
+    margin-bottom: 30px;
+}
+
+#left-footer {
+    position: absolute;
+    left: 0;
+}
+
+#right-footer {
+    position: absolute;
+    right: 0;
 }
