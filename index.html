@@ -25,22 +25,21 @@
     </nav>
     <div id="hero">
         <div id="availability">
-            <div class="online-dot"></div>
+            <div class="online-dot" style="width: 1vw; height: 1vw;"></div>
             <div>AVAILABLE FOR WORK</div>
         </div>
         <h1 id="greeting">Hi, I'm <span id="name">Enoch</span></h1>
-        <h2 id="description">Front-end Developer &  <i id="creative-thinker">Creative Thinker</i></h2>
+        <h2 id="description">Front-end Developer &  <i id="creative-thinker"> Creative Thinker</i></h2>
         <p id="description-detail">I build clean, fast and beautiful websites. Currently learning the fundamentals of
             web develpment - HTML CSS, Javascript and Git - one project at a time</p>
         <div id="quick-action">
             <a href="#" id="view-prompt">
-                <span id="view-arrow">
-                    <span>View my work </span>
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                <span id="view-work-text">View my work </span>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
                         width="18px" fill="#0a0a0f">
                         <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
                     </svg>
-                </span></a>
+            </a>
             <a href="#" id="get-in-touch-prompt">Get In Touch</a>
         </div>
         <p id="scroll-prompt">----- SCROLL TO EXPLORE</p>
@@ -55,24 +54,32 @@
                 <div id="opportunities"><div class="online-dot"></div><span id="opportunities-text">Open to opportunities</span></div>
             </div>
             <div id="about-me-info-div">
-                <p id="about-me-info">I'm Enoch, a passionate web developer based in Lagos, Nigeria. I love turning ideas into real things on the internet - from a simple HTML page to a fully styled, interactive site. <br><br> I believe great design and clean code go hand in hand. Every project I build teaches me something new, and I'm always hungry to learn the next thing. <br><br> When I'm not coding, you'll find me exploring tech communities, staying curious, and building things that matter.</p>
+                <p id="about-me-info"><span>I'm Enoch, a passionate web developer based in Lagos, Nigeria.</span><button id="read-more-button" onclick="document.getElementById('about-me-info-detail').style.display = 'block'; document.getElementById('read-more-button').style.display = 'none';">Read More</button><span id="about-me-info-detail">I love turning ideas into real things on the internet - from a simple HTML page to a fully styled, interactive site. <br><br> I believe great design and clean code go hand in hand. Every project I build teaches me something new, and I'm always hungry to learn the next thing. <br><br> When I'm not coding, you'll find me exploring tech communities, staying curious, and building things that matter.</span></p>
                 <ul id="list-of-skills" style="padding: 0;">
                     <li class="skill" style="margin-left: 0;">HTML5</li>
                     <li class="skill">CSS3</li>
                     <li class="skill">JavaScript</li>
-                    <li class="skill">Git</li>
-                    <li class="skill">GitHub</li>
-                    <li class="skill">VS Code</li>
-                    <li class="skill">Responsive Design</li>
-                    <li class="skill">Flexbox</li>
+                    <button id="see-more-skills" onclick="document.getElementById('additional-skills').style.display = 'block'; document.getElementById('see-more-skills').style.display = 'none';"><span>See More</span>
+                        <svg class="arrow2" xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960"
+                        width="18px" fill="white">
+                        <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                    </svg>
+                    </button>
+                    <div id="additional-skills">
+                        <li class="skill">Git</li>
+                        <li class="skill">GitHub</li>
+                        <li class="skill">VS Code</li>
+                        <li class="skill">Responsive Design</li>
+                        <li class="skill">Flexbox</li>
+                    </div>
                 </ul>
             </div>
         </div>
     </div>
     <div id="projects">
         <p id="section-projects-start">PROJECTS -----</p>
-        <h2>Things I've built</h2>
-        <p>A collection of personal projects - each one a step forward in my journey.</p>
+        <h2 id="projects-heading">Things I've built</h2>
+        <p style="font-size: 2.2vh; margin-bottom: 30px;">A collection of personal projects - each one a step forward in my journey.</p>
         <div id="project-boxes">
             <div class="project-box">
                 <div class="project-image" id="project-portfolio">🌐</div>

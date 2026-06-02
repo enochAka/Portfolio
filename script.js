@@ -33,15 +33,15 @@ window.addEventListener("load", () => {
     
     window.addEventListener("scroll", () => {
         const scrollAmount = window.scrollY;
-        if (scrollAmount > 500) {
+        if (scrollAmount > window.innerHeight * 0.5) {
             aboutMeDiv.style.animation = "float-in 1s ease-in-out forwards";
             aboutMeDiv.style.display = "block";
         }
-        if (scrollAmount > 1300) {
+        if (scrollAmount > window.innerHeight * 1.5) {
             projectsDiv.style.animation = "float-in 1s ease-in-out forwards";
             projectsDiv.style.display = "block";
         }
-        if (scrollAmount > 2200) {
+        if (scrollAmount > window.innerHeight * 3.5) {
             contactDiv.style.animation = "float-in 1s ease-in-out forwards";
             contactDiv.style.display = "flex";
             spaceDiv.style.height = "0";
